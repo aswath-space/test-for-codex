@@ -1,6 +1,6 @@
 import streamlit as st
 
-def display_inputs_with_tabs():
+def display_inputs_with_tab():
     """
     Draws all UI input sections using tabs instead of sidebar.
     Returns:
