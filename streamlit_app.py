@@ -5,7 +5,7 @@
 import streamlit as st
 import pandas as pd
 
-from ui import display_sidebar_inputs
+from ui import display_inputs_with_tabs
 from parse_inputs import get_config_from_user_input
 from load_profile import load_demand_profile
 from optimizer import run_optimization
@@ -15,7 +15,7 @@ st.set_page_config(page_title="GridEdge Optimizer", layout="wide")
 st.title("🔋 GridEdge Optimizer – PV + BESS + EV Sizing Tool")
 
 # Step 1: Get user input from sidebar
-user_input, load_file = display_sidebar_inputs()
+user_input, load_file = display_inputs_with_tabs()
 
 # Step 2: Validate input & run simulation
 st.markdown("---")
